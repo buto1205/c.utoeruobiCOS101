@@ -15,18 +15,17 @@ use std::io;
     let mut food_choice = String::new();
     io::stdin().read_line(&mut food_choice).expect("Failed to read input");
 
-    let mut price = 0.0;
 
     if food_choice == "P" {
-         price = 3200.0;
+         price1 = 3200.0;
     } else if food_choice == "F" {
-         price = 3000.0;
+         price2 = 3000.0;
     } else if food_choice == "A" {
-         price = 2500.0;
+         price3 = 2500.0;
     } else if food_choice == "E" {
-          price = 2000.0;
+          price4 = 2000.0;
     } else if food_choice == "W" {
-         price = 2500.0;
+         price5 = 2500.0;
     } else {
         println!("Failed to recognize the choice chosen");
         return;
