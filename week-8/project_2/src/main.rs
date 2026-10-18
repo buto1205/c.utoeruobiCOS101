@@ -1,5 +1,5 @@
 fn main() {
-    let apply: Vec<(String,u16)> = Vec::new();
+    let mut apply: Vec<(String,u16)> = Vec::new();
 
     println!("WELCOME TO EY GLOBAL LIMITED");
 
@@ -22,17 +22,14 @@ fn main() {
         let mut exp = String::new();
         println!("How many years of programming experience do you have?");
         std::io::stdin().read_line(&mut exp).expect("Failed to read input");
-        exp = exp.trim().parse().expect("Invalid input");
+        let exp:u16 = exp.trim().parse().expect("Invalid input");
 
         apply.push((name,exp));
-
-        if let Some((name,exp)) = apply.iter().max_by_key(| (_, expect)|exp 2){
+        }
+        if let Some((name,exp)) = apply.iter().max_by_key(| (_, exp)| exp){
             println!("The most experienced worker is {} with {} years of work",name, exp );
 
+        }
 
 
-    }
-
-
-         
 }
