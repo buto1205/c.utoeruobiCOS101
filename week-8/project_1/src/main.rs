@@ -119,7 +119,7 @@ fn vteacher(){
         "Office Admin" => {
             vadmin() }
 
-        "Academic" => {
+        "Academics" => {
             vacademic()}
 
         "Lawyer" => {
